@@ -8,8 +8,9 @@ This is a work in progress, and you're help would be amazing!
 ##How to Run
 1. Clone the repository to a folder (or download it).
 2. Navigate to it on the command line.
-3. Run 'node .' (or 'nodejs .' if on Ubuntu Linux)
-4. Visit localhost:8000 in your browser and you'll see the website running!
+3. Run 'npm install' to install all the dependencies.
+4. Run 'node .' (or 'nodejs .' if on Ubuntu Linux)
+5. Visit localhost:8000 in your browser and you'll see the website running!
 
 ##Version
 This website runs on Goblin v0.0.2
