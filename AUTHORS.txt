@@ -1,5 +1,3 @@
 Authors ordered by first contribution.
 
 Nick Weingartner (nweingartner@gmail.com)
-Sotirios Vrachas (sotitirios@vrachas.net)
-Dave Mullen (upperdecker@gmail.com)
