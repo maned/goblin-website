@@ -20,6 +20,7 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
+
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -31,7 +32,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/index.html">Goblin: A Pure CMS</a>
+              <a class="navbar-brand" href="/index.html">{{site_title}}: {{site_description}}</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -46,8 +47,8 @@
       </div>
     </div>
 
-    <div class="row">
-        <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+    <div class="row text-center">
+        <img src="/theme/img/goblin_logo.png" data-src="/theme/img/goblin_logo.png" alt="Goblin">
     </div>
 
     <!-- Carousel
@@ -92,8 +93,6 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div> /.carousel -->
 
-    <!--<a href="https://github.com/maned/goblin"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>-->
-
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -120,7 +119,7 @@
           <p class="lead">Goblin is coded entirely in Javascript, both on the client- and server-sides, offering a level of comfortability that's not obtaininable in other CMS solutions.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png" data-src="http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="/theme/img/javascript.png" data-src="/theme/img/javascript.png" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -128,10 +127,10 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="http://2.bp.blogspot.com/_4irpxXB1j9o/TC9JHN146KI/AAAAAAAAA2Q/aRHDTobrQy4/s1600/Mr.+Fantastic.jpg" data-src="http://2.bp.blogspot.com/_4irpxXB1j9o/TC9JHN146KI/AAAAAAAAA2Q/aRHDTobrQy4/s1600/Mr.+Fantastic.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="/theme/img/goblin.png" data-src="/theme/img/goblin.png" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">Flexible. <span class="text-muted">Like, Mr. Fantastic.</span></h2>
+          <h2 class="featurette-heading">Strong. <span class="text-muted">And Flexible.</span></h2>
           <p class="lead">Goblin is built for the themer. If you know how to make a website, you can tie into Goblin with ease. The guts of the system are flexible as well, so it can be molded into any custom solution with little trouble.</p>
         </div>
       </div>
@@ -144,7 +143,7 @@
           <p class="lead">Goblin is released under the GNU Public License, Version 3, meaning it's completely free software -- you can read and modify the code, and benefit from (and participate with) a growing Goblin Community.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="http://www.openequalfree.org/wp-content/uploads/2011/11/512px-Copyleft-500x500.png" data-src="http://www.openequalfree.org/wp-content/uploads/2011/11/512px-Copyleft-500x500.png" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="/theme/img/copyleft.png" data-src="/theme/img/copyleft.png" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -156,7 +155,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Managing Editor, Inc. Powered by Goblin</p>
+        <p>&copy; 2013 <a href="http://www.maned.com/">Managing Editor, Inc</a>. Powered by <a href="http://goblin.jit.su/">Goblin</a>. Contribute to <a href="https://github.com/maned/goblin-website" target="_blank"> this website</a>.</p>
       </footer>
 
     </div><!-- /.container -->

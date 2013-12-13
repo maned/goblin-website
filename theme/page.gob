@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/index.html">Goblin: A Pure CMS</a>
+              <a class="navbar-brand" href="/index.html">{{site_title}}: {{site_description}}</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -55,17 +55,18 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-md-12">
+        <div class="container">
           <h1>{{page_title}}</h1>
           <p>{{{page_content}}}</p>
         </div>
       </div><!-- /.row -->
 
+      <hr class="featurette-divider">
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Managing Editor, Inc. Powered by Goblin</p>
+        <p>&copy; 2013 <a href="http://www.maned.com/">Managing Editor, Inc</a>. Powered by <a href="http://goblin.jit.su/">Goblin</a>. Contribute to <a href="https://github.com/maned/goblin-website" target="_blank"> this website</a>.</p>
       </footer>
 
     </div><!-- /.container -->
@@ -77,5 +78,9 @@
     <script src="theme/js/vendor/jquery-2.0.3.min.js"></script>
     <script src="theme/js/vendor/bootstrap.min.js"></script>
     <script src="theme/js/vendor/holder.js"></script>
+    <script src="theme/js/kanye.js"></script>
+    <script>
+      Kanye.yell();
+    </script>
   </body>
 </html>
