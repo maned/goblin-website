@@ -9,37 +9,43 @@
     <title>Goblin: A Pure CMS</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="theme/css/vendor/bootstrap.css" rel="stylesheet">
+    <link href="/theme/css/vendor/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="theme/css/carousel.css" rel="stylesheet">
+    <link href="/theme/css/carousel.css" rel="stylesheet">
 
     <!-- Custom styles -->
-    <link href="theme/css/styles/style.css" rel="stylesheet">
+    <link href="/theme/css/styles/style.css" rel="stylesheet">
+    
+    <!-- Google font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
     <div class="container">
-    <a href="https://github.com/maned/goblin" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/maned/goblin" target="_blank"><img class="fork" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
     <div class="navbar-wrapper">
       <div class="container">
 
         <div class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
+          <div class="insidecontainer">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/index.html">{{site_title}}: {{site_description}}</a>
+              <a class="navbar-brand" href="/index.html">
+              	{{site_title}}: {{site_description}}
+              </a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                {{#nav}}
+               <!--{{#nav}}
                     <li><a href="{{url}}" id="{{id}}">{{item_name}}</a></li>
-                {{/nav}}
+                {{/nav}}-->
               </ul>
             </div>
           </div>
@@ -48,51 +54,22 @@
       </div>
     </div>
 
-    <div class="row text-center">
-        <img src="/theme/img/goblin_logo.png" data-src="/theme/img/goblin_logo.png" alt="Goblin">
+    <div class="row green">
+        <div class="insidecontainer greenpad">
+            <!--<img src="/theme/img/goblin_logo.png" data-src="/theme/img/goblin_logo.png" alt="Goblin">-->
+            <div class="col-md-5">
+                <h1>{{site_title}}</h1>
+                <p>Goblin is a simple, customizable and easily accessible content management system designed for themers.
+                </p>
+                <button>Download</button><br>
+                <a href="https://github.com/maned/goblin-website" class="git"><img src="/theme/img/github.png" align="texttop" />Goblin on GitHub</a>
+                <a href="" class="twitter"><img src="/theme/img/twitter.png" align="texttop" />  @Goblin </a>
+            </div>
+            <div class="col-md-5">
+            	<img src="/theme/img/goblin1.png" class="gobby" />
+            </div>
+        </div>
     </div>
-
-    <!-- Carousel
-    ==================================================
-    <div id="myCarousel" class="carousel slide">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Static.</h1>
-              <p>Goblin is built specifically for non-blogging websites, and therefore doesn't carry the weight of other CMS solutions.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Themer-friendly.</h1>
-              <p>Goblin is built to theme -- if you can code with HTML and CSS, you can theme in Goblin.</p>
-              <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Easily Accessible.</h1>
-              <p>Built using scalable and cloud-based technologies, Goblin is built to be as accessible, scalable and wonderful as possible.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div> /.carousel -->
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
@@ -102,61 +79,57 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-12 text-center">
-            <p>{{{page_content}}}</p>
-            <br>
-            <a class="btn btn-lg btn-success download-goblin" href="https://github.com/maned/goblin/archive/master.zip">Download Goblin Now</a>
-            <br>
+        <div>
+            <!-- <p>{{{page_content}}}</p> -->
         </div>
         
       </div><!-- /.row -->
 
 
       <!-- START THE FEATURETTES -->
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Javascript. <span class="text-muted">Everywhere.</span></h2>
-          <p class="lead">Goblin is coded entirely in Javascript, both on the client- and server-sides, offering a level of comfortability that's not obtaininable in other CMS solutions.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="/theme/img/javascript.png" data-src="/theme/img/javascript.png" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="/theme/img/goblin.png" data-src="/theme/img/goblin.png" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Strong. <span class="text-muted">And Flexible.</span></h2>
-          <p class="lead">Goblin is built for the themer. If you know how to make a website, you can tie into Goblin with ease. The guts of the system are flexible as well, so it can be molded into any custom solution with little trouble.</p>
+      <div class="row featurette1">
+      	<div class="insidecontainer">
+        	<div class="col-md-6">
+            	<h2 class="featurette-heading">Goblin: A pure CMS</h2>
+                <p>{{{page_content}}}</p>
+            </div>
+            <div class="col-md-4 text-right" style="padding-top: 25px;">
+                <button class="greenbtn">Download</button>
+            </div>
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Open Source. <span class="text-muted">And Totally Free.</span></h2>
-          <p class="lead">Goblin is released under the GNU Public License, Version 3, meaning it's completely free software -- you can read and modify the code, and benefit from (and participate with) a growing Goblin Community.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="/theme/img/copyleft.png" data-src="/theme/img/copyleft.png" alt="Generic placeholder image">
-        </div>
+      <div class="row picture-row">
+          <div class="insidecontainer pad120">
+          	<div class="col-md-3 text-center">
+                <img src="/theme/img/js.png" />
+                <h3>Javascript. Everywhere.</h3>
+                <p>Goblin is coded entirely in Javascript, both on the client- and server-sides, offering a level of comfortability that's not obtaininable in other CMS solutions.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="/theme/img/hammer.png" />
+                <h3>Strong. And Flexible.</h3>
+                <p class="mid">Goblin is built for the themer. If you know how to make a website, you can tie into Goblin with ease. The guts of the system are flexible as well, so it can be molded into any custom solution with little trouble.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="/theme/img/copyleft.png" />
+                <h3>Javascript. Everywhere.</h3>
+                <p>Goblin is released under the GNU Public License, Version 3, meaning it's completely free software -- you can read and modify the code, and benefit from (and participate with) a growing Goblin Community.</p>
+            </div>
+          </div>
       </div>
-
-      <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>Powered by <a href="http://goblin.jit.su/">Goblin</a>. Contribute to <a href="https://github.com/maned/goblin-website" target="_blank"> this website</a>.</p>
+      	<div class="insidecontainer">
+        	<p class="col-md-10">Powered by <a href="http://goblin.jit.su/">Goblin</a>. Contribute to <a href="https://github.com/maned/goblin-website" target="_blank"> this website</a>.<a href="#" class="pull-right padright">Back to top</a></p>
+        </div>
+      	<!--div class="insidecontainer">
+        	<p class="col-md-8">Powered by <a href="http://goblin.jit.su/">Goblin</a>. Contribute to <a href="https://github.com/maned/goblin-website" target="_blank"> this website</a>.</p>
+            <p class="col-md-4 text-right" style="padding-right: 50px;"><a href="#">Back to top</a></p>
+        </div-->
       </footer>
 
     </div><!-- /.container -->
@@ -165,9 +138,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="theme/js/vendor/jquery-2.0.3.min.js"></script>
-    <script src="theme/js/vendor/bootstrap.min.js"></script>
-    <script src="theme/js/vendor/holder.js"></script>
+    <script src="/theme/js/vendor/jquery-2.0.3.min.js"></script>
+    <script src="/theme/js/vendor/bootstrap.min.js"></script>
+    <script src="/theme/js/vendor/holder.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
