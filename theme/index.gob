@@ -42,11 +42,11 @@
               </a>
             </div>
             <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-               <!--{{#nav}}
+              <!--<ul class="nav navbar-nav">
+               {{#nav}}
                     <li><a href="{{url}}" id="{{id}}">{{item_name}}</a></li>
-                {{/nav}}-->
-              </ul>
+                {{/nav}}
+              </ul>-->
             </div>
           </div>
         </div>
