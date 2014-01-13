@@ -63,7 +63,7 @@
                 </p>
                 <button>Download</button><br>
                 <a href="https://github.com/maned/goblin-website" class="git"><img src="/theme/img/github.png" align="texttop" />Goblin on GitHub</a>
-                <a href="" class="twitter"><img src="/theme/img/twitter.png" align="texttop" />  @Goblin </a>
+                <!--<a href="" class="twitter"><img src="/theme/img/twitter.png" align="texttop" />  @Goblin </a>-->
             </div>
             <div class="col-md-5">
             	<img src="/theme/img/goblin1.png" class="gobby" />
